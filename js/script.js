@@ -30,9 +30,8 @@ for(var i = 0; i < movies.length; i++){
 
 for (var i = 0; i < movieObj.length; i++){
     var movie =  movieObj[i];
-    console.log(movie.title);
-    var a = e('li', movie.title, {href: 'http://google.com', id:"google"}, {color:"red"});
-  ul.appendChild(a);
+    var li = e('li', movie.title);
+  ul.appendChild(li);
 }
 
 function e(elementType, text, attributes, styles) {
